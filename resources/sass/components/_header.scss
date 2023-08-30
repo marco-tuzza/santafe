@@ -1,0 +1,64 @@
+/* Desktop */
+#header {
+    background-color: $sf-dark-green;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+}
+
+#header-menu {
+    display: flex;
+    height: 100%;
+    justify-self: center;
+    align-items: center;
+}
+
+.header-menu-item {
+    margin: 0px 16px;
+}
+
+.header-menu-item a {
+    color: $sf-white;
+    font-size: 16px;
+    padding: 4px 0px;
+    text-decoration: none;
+    position: relative;
+}
+
+.header-menu-item a::before, .header-menu-item a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    background-color: $sf-green;
+    transition: width 0.3s ease-out;
+}
+
+.header-menu-item a::before {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header-menu-item a::after {
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.header-menu-item.active a::before,
+.header-menu-item.active a::after {
+  width: 100%;
+  opacity: 1;
+}
+
+.header-menu-item:not(.active):hover a::before,
+.header-menu-item:not(.active):hover a::after {
+  width: 100%;
+  opacity: 1;
+}
+
+#header-menu-logo img {
+    height: 100px;
+}
