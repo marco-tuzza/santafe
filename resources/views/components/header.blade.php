@@ -15,7 +15,7 @@
             <a href="">Menu</a>
         </div>
         <div id="header-menu-logo">
-            <img src="{{ asset('images/logo.png') }}" alt="SantaFe Logo">
+            <img src="{{ asset('images/santafe_logo.png') }}" alt="SantaFe Logo">
         </div>
         <div class="header-menu-item">
             <a href="">About Us</a>
