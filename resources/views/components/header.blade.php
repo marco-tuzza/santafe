@@ -28,20 +28,20 @@
 <!-- Menu -->
 <div id="menu-mobile">
     <div id="menu-mobile-header">
-        <span>X</span>
+        <span id="menu-mobile-header-close">X</span>
     </div>
     <div id="menu-mobile-body">
-        <div class="menu-mobile-body-element">
-            <span class="active">Home</span>
+        <div class="menu-mobile-body-element {{ request()->is('/') ? 'active' : '' }}">
+            <a href="">Home</a>
         </div>
         <div class="menu-mobile-body-element">
-            <span>Menu</span>
+            <a href="">Menu</a>
         </div>
         <div class="menu-mobile-body-element">
-            <span>About Us</span>
+            <a href="">About Us</a>
         </div>
         <div class="menu-mobile-body-element">
-            <span>Contact Us</span>
+            <a href="">Contact Us</a>
         </div>
     </div>
 </div>

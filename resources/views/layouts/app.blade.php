@@ -7,7 +7,7 @@
         <title>SantaFe</title>
 
         <!-- Styles -->
-        @vite(['resources/sass/app.scss'])
+        @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     </head>
     <body class="english">
         @include('components.header')
