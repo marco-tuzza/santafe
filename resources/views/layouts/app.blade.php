@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>SantaFe</title>
-
         <!-- Styles -->
         @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     </head>

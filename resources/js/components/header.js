@@ -23,3 +23,10 @@ $(document).on("mouseup", function(e) {
         container.slideUp(500);
     }
 });
+
+/* Close menu mobile when resize and the page is bigger than 768px*/
+$(window).on('resize', function() {
+    if ($(window).width() > 768) {
+        $('#menu-mobile').hide();
+    }
+});
