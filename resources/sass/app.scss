@@ -3,5 +3,10 @@
 @import 'base/_common';
 @import 'base/typography';
 
+/* Fontawesome */
+@import 'assets/fontawesome/sass/fontawesome.scss';
+@import "assets/fontawesome/sass/solid.scss";
+@import "assets/fontawesome/sass/brands.scss";
+
 /* Components */
 @import 'components/_header';
