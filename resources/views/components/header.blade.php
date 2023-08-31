@@ -28,7 +28,7 @@
 <!-- Menu -->
 <div id="menu-mobile">
     <div id="menu-mobile-header">
-        <span id="menu-mobile-header-close">X</span>
+        <i class="fa-solid fa-xmark" id="menu-mobile-header-close"></i>
     </div>
     <div id="menu-mobile-body">
         <div class="menu-mobile-body-element {{ request()->is('/') ? 'active' : '' }}">
