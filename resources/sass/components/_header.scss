@@ -152,6 +152,10 @@
         flex-direction: column;
         justify-content: space-evenly;
         height: 100%;
+
+        #menu-mobile-body-list {
+            display: none;
+        }
     }
 
     .menu-mobile-body-element {
