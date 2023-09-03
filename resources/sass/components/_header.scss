@@ -7,59 +7,72 @@
     justify-content: center;
     font-weight: 300;
 
-    #header-menu {
-        display: flex;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-    }
+    nav {
+        
+        #header-menu {
+            height: 100%;
+        }
 
-    .hamburger-menu {
-        display: none;
-    }
+        .hamburger-menu {
+            display: none;
+        }
 
-    .header-menu-item {
-        margin: 0px 16px;
+        .header-menu-list {
+            height: 100%;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            align-items: center;
+        }
 
-        a {
-            color: $sf-white;
-            font-size: 16px;
-            padding: 4px 0px;
-            text-decoration: none;
-            position: relative;
+        .header-menu-item {
+            margin: 0px 16px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
 
-            &::before, &::after {
-                content: "";
-                position: absolute;
-                width: 0;
-                height: 1px;
-                bottom: 0;
-                background-color: $sf-green;
-                transition: width 0.3s ease-out;
+            a {
+                color: $sf-white;
+                font-size: 16px;
+                padding: 4px 0px;
+                text-decoration: none;
+                position: relative;
+
+                &::before, &::after {
+                    content: "";
+                    position: absolute;
+                    width: 0;
+                    height: 1px;
+                    bottom: 0;
+                    background-color: $sf-green;
+                    transition: width 0.3s ease-out;
+                }
+
+                &::before {
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+
+                &::after {
+                    right: 50%;
+                    transform: translateX(50%);
+                }
             }
 
-            &::before {
-                left: 50%;
-                transform: translateX(-50%);
-            }
-
-            &::after {
-                right: 50%;
-                transform: translateX(50%);
+            &.active a::before,
+            &:not(.active):hover a::before,
+            &.active a::after,
+            &:not(.active):hover a::after {
+                width: 100%;
+                opacity: 1;
             }
         }
 
-        &.active a::before,
-        &:not(.active):hover a::before,
-        &.active a::after,
-        &:not(.active):hover a::after {
-            width: 100%;
-            opacity: 1;
+        #header-menu-logo img {
+            height: 100px;
         }
-    }
-
-    #header-menu-logo img {
-        height: 100px;
     }
 }
 
@@ -73,28 +86,31 @@
         height: 90px;
         position: relative;
 
-        #hamburger-menu {
-            display: block;
-            position: absolute;
-            top: 50%;
-            left: 16px;
-            transform: translateY(-50%);
-        }
-
-        .hamburger-element {
-            display: block;
-            height: 2px;
-            width: 35px;
-            background-color: $sf-green;
-            margin: 8px 0px;
-        }
-
-        .header-menu-item {
-            display: none;
-        }
-
-        #header-menu-logo img {
-            height: 90px;
+        nav {
+            
+            #hamburger-menu {
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 16px;
+                transform: translateY(-50%);
+            }
+    
+            .hamburger-element {
+                display: block;
+                height: 2px;
+                width: 35px;
+                background-color: $sf-green;
+                margin: 8px 0px;
+            }
+    
+            .header-menu-item {
+                display: none;
+            }
+    
+            #header-menu-logo img {
+                height: 90px;
+            }
         }
     }
 
@@ -113,15 +129,20 @@
         padding-right: 20px;
         padding-top: 20px;
 
-        span, i {
+        i {
             color: $sf-white;
             font-size: 26px;
         }
     }
 
-    .menu-mobile-body-element {
+    #menu-mobile-body {
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+    }
+
+    .menu-mobile-body-element {
         height: 64px;
 
         &.active a{
@@ -130,6 +151,7 @@
         }
 
         a {
+            display: block;
             color: $sf-white;
             font-size: 32px;
             margin-left: 35px;
