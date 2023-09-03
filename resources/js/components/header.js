@@ -2,6 +2,7 @@ import $ from 'jquery';
 
 // Select elements once and store them in variables
 const $menuMobile = $('#menu-mobile');
+const $menuMobileBodyList = $('#menu-mobile-body-list');
 const $overlay = $('#overlay');
 const $hamburgerMenu = $('#hamburger-menu');
 const $menuMobileHeaderClose = $('#menu-mobile-header-close');
@@ -10,12 +11,14 @@ const $menuMobileHeaderClose = $('#menu-mobile-header-close');
 function openMenu() {
     $menuMobile.slideDown(500);
     $overlay.fadeIn(500);
+    $("#menu-mobile-body-list").fadeIn(500);
 }
 
 // Function to close the mobile menu
 function closeMenu() {
     $menuMobile.slideUp(500);
     $overlay.fadeOut(500);
+    $("#menu-mobile-body-list").fadeOut(250);
 }
 
 // Event handler for opening the mobile menu

@@ -37,7 +37,7 @@
         <i class="fa-solid fa-xmark" id="menu-mobile-header-close"></i>
     </div>
     <div id="menu-mobile-body">
-        <ul id="mobile-menu-body-list">
+        <ul id="menu-mobile-body-list">
             <li class="menu-mobile-body-element {{ request()->is('/') ? 'active' : '' }}">
                 <a href="/" title="Visit SantaFe Restaurant homepage">Home</a>
             </li>
