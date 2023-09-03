@@ -1,32 +1,47 @@
 import $ from 'jquery';
 
-/* Menu mobile */
+// Select elements once and store them in variables
+const $menuMobile = $('#menu-mobile');
+const $overlay = $('#overlay');
+const $hamburgerMenu = $('#hamburger-menu');
+const $menuMobileHeaderClose = $('#menu-mobile-header-close');
 
-/* Open menu mobile */
-$('#hamburger-menu').on("click", function() {
-    if ($('#menu-mobile').is(":hidden")) {
-        $('#menu-mobile').slideDown(500);
+// Function to open the mobile menu
+function openMenu() {
+    $menuMobile.slideDown(500);
+    $overlay.fadeIn(500);
+}
+
+// Function to close the mobile menu
+function closeMenu() {
+    $menuMobile.slideUp(500);
+    $overlay.fadeOut(500);
+}
+
+// Event handler for opening the mobile menu
+$hamburgerMenu.on("click", function() {
+    if ($menuMobile.is(":hidden")) {
+        openMenu();
     }
 });
 
-/* Close menu mobile */
-$('#menu-mobile-header-close').on("click", function() {
-    if ($('#menu-mobile').is(":visible")) {
-        $('#menu-mobile').slideUp(500);
+// Event handler for closing the mobile menu
+$menuMobileHeaderClose.on("click", function() {
+    if ($menuMobile.is(":visible")) {
+        closeMenu();
     }
 });
 
-/* Close menu mobile when click outside */
+// Event handler for closing the mobile menu when clicking outside
 $(document).on("mouseup", function(e) {
-    var container = $("#menu-mobile");
-    if (!container.is(e.target) && container.has(e.target).length === 0) {
-        container.slideUp(500);
+    if (!$menuMobile.is(e.target) && $menuMobile.has(e.target).length === 0) {
+        closeMenu();
     }
 });
 
-/* Close menu mobile when resize and the page is bigger than 768px*/
+// Event handler for closing the mobile menu when resizing the window
 $(window).on('resize', function() {
     if ($(window).width() > 768) {
-        $('#menu-mobile').hide();
+        closeMenu();
     }
 });
