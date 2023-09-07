@@ -7,3 +7,40 @@
 body.english {
     font-family: WienPro, sans-serif;
 }
+
+.container {
+    width: 100%;
+    padding: 0 40px;
+}
+
+.sf-primary-button {
+    font-family: WienPro, sans-serif;
+    font-weight: 300;
+    width: 228px;
+    height: 80px;
+    background-color: $sf-light-green;
+    border: 0;
+    cursor: pointer;
+    
+    a {
+        color: $sf-dark-green;
+        text-decoration: none;
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    .sf-primary-button {
+        width: 136px;
+        height: 44px;
+
+        a {
+            font-size: 16px;
+        }
+    }
+}
