@@ -41,6 +41,10 @@ section {
 
 @media screen and (max-width: 768px) {
 
+    section {
+        height: calc(100vh - $header-height-mobile);
+    }
+
     #content-container {
         padding-top: $header-height-mobile;
     }

@@ -48,7 +48,6 @@
 
 @media screen and (max-width: 768px) {
     #hero-section {
-        height: calc(100vh - $header-height-mobile);
         background-image: url('/public/images/heropage_mobile.jpg');
 
         #hero-section-container {
