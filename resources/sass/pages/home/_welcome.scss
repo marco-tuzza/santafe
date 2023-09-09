@@ -1,6 +1,4 @@
 #welcome-section {
-    width: 100%;
-    height: calc(100vh - $header-height);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -36,7 +34,6 @@
 
 @media screen and (max-width: 768px) {
     #welcome-section {
-        height: calc(100vh - $header-height-mobile);
         background-image: url('/public/images/Aboutus-mobile.jpg');
 
         #welcome-section-text-container {

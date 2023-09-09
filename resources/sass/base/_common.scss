@@ -8,6 +8,11 @@ body.english {
     font-family: WienPro, sans-serif;
 }
 
+section {
+    width: 100%;
+    height: calc(100vh - $header-height);
+}
+
 #content-container {
     padding-top: $header-height;
 }
@@ -35,6 +40,10 @@ body.english {
 }
 
 @media screen and (max-width: 768px) {
+
+    section {
+        height: calc(100vh - $header-height-mobile);
+    }
 
     #content-container {
         padding-top: $header-height-mobile;

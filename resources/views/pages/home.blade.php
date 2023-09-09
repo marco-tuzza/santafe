@@ -37,4 +37,25 @@
         </button>
     </div>
 </section>
+
+<!-- Chef Section -->
+<section class="container" id="chef-section">
+    <div id="chef-section-container">
+        <div id="chef-section-image-container">
+            <img id="chef-section-image" src="{{ asset('images/chef-luca.png')}}" alt="">
+        </div>
+        <div id="chef-section-text-container">
+            <h2 id="chef-section-text-title">Luca Carleo</h2>
+            <span id="chef-section-text-subtitle">Executive Chef</span>
+            <p id="chef-section-text-content">
+                The experienced Italian chef Luca Carleo has been the 
+                Executive Chef of Santafe restaurant for months now. 
+                Working with the current Chef and the service team, 
+                he strives to set a new quality benchmark. Along with 
+                the Galaxy Group of Companies, Luca Carleo is making 
+                changes to give the restaurant an authentic Italian touch.
+            </p>
+        </div>
+    </div>
+</section>
 @endsection
