@@ -1,0 +1,55 @@
+#welcome-section {
+    width: 100%;
+    height: calc(100vh - $header-height);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url('/public/images/Aboutus.jpg');
+
+    #welcome-section-text-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 15%;
+        padding-right: 15%;
+        text-align: center;
+
+        #welcome-section-text-title {
+            font-size: 60px;
+            font-weight: 500;
+            font-style: italic;
+            color: $sf-dark-green;
+            margin-bottom: 34px;
+        }
+
+        #welcome-section-text-content {
+            font-size: 32px;
+            font-weight: 300;
+            color: #000;
+            margin-bottom: 34px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #welcome-section {
+        height: calc(100vh - $header-height-mobile);
+        background-image: url('/public/images/Aboutus-mobile.jpg');
+
+        #welcome-section-text-container {
+
+            #welcome-section-text-title {
+                font-size: 28px;
+                margin-bottom: 14px;
+            }
+
+            #welcome-section-text-content {
+                font-size: 16px;
+                margin-bottom: 14px;
+            }
+        }
+    }   
+}

@@ -8,6 +8,10 @@ body.english {
     font-family: WienPro, sans-serif;
 }
 
+#content-container {
+    padding-top: $header-height;
+}
+
 .container {
     width: 100%;
     padding: 0 40px;
@@ -31,6 +35,11 @@ body.english {
 }
 
 @media screen and (max-width: 768px) {
+
+    #content-container {
+        padding-top: $header-height-mobile;
+    }
+    
     .container {
         padding: 0 16px;
     }
