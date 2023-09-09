@@ -1,0 +1,54 @@
+#chef-section {
+    background-color: $sf-green;
+
+    #chef-section-container {
+        display: flex;
+        height: 100%;
+        width: 100%;
+
+        #chef-section-image-container {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            #chef-section-image {
+                width: 100%;
+                max-width: 568px;
+                padding-right: 20px;
+            }
+        }
+
+        #chef-section-text-container {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+
+            #chef-section-text-title {
+                color: $sf-white;
+                font-size: 60px;
+                font-style: italic;
+                font-weight: 400;
+                margin-bottom: 20px;
+            }
+            
+            #chef-section-text-subtitle {
+                color: $sf-light-green;
+                font-size: 36px;
+                font-weight: lighter;
+                margin-bottom: 20px;
+            }
+            
+            
+            #chef-section-text-content {
+                color: $sf-white;
+                font-size: 36px;
+                font-weight: lighter;
+            }
+        }
+    }
+}

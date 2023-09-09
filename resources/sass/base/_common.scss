@@ -8,6 +8,11 @@ body.english {
     font-family: WienPro, sans-serif;
 }
 
+section {
+    width: 100%;
+    height: calc(100vh - $header-height);
+}
+
 #content-container {
     padding-top: $header-height;
 }
