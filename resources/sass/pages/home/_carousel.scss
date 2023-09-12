@@ -1,0 +1,36 @@
+#carousel-section {
+    background-color: $sf-light-green;
+
+    #carousel-section-container {
+        height: 100%;
+        width: 100%;
+
+        #carousel-section-text-container {
+            width: 40%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            #carousel-section-text-title  {
+                color: $sf-dark-green;
+                font-size: 60px;
+                font-style: italic;
+                font-weight: 500;
+
+                span {
+                    color: $sf-dark-green;
+                    display: block;
+                }
+            }
+
+            #carousel-section-text-content {
+                color: #000;
+                font-size: 28px;
+                font-weight: 300;
+                margin-top: 20px;
+                text-align: justify;
+            }
+        }
+    }
+}

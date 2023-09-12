@@ -38,6 +38,27 @@
     </div>
 </section>
 
+<!-- Carousel Section -->
+<section class="container" id="carousel-section">
+    <div id="carousel-section-container">
+        <div id="carousel-section-text-container">
+            <h2 id="carousel-section-text-title">
+                <span>Dining at Santafe:</span>
+                <span>A taste of Excellence</span>
+            </h2>
+            <p id="carousel-section-text-content">
+                Discover the Culinary Treasures of Yerevan 
+                at Our Restaurant - We Take Pride in Offering 
+                You a Taste of Chef's Culinary Artistry and 
+                Unmatched Flavors.
+            </p>
+        </div>
+        <div id="carousel-section-slider-container">
+
+        </div>
+    </div>
+</section>
+
 <!-- Chef Section -->
 <section class="container" id="chef-section">
     <div id="chef-section-container">
