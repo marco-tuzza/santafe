@@ -13,5 +13,6 @@
         <div id="content-container">
             @yield('content')
         </div>
+        @include('components.footer')
     </body>
 </html>
