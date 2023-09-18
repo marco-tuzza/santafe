@@ -38,11 +38,48 @@
     </div>
 </section>
 
+<!-- Carousel Section -->
+<section class="container" id="carousel-section">
+    <div id="carousel-section-container">
+        <div id="carousel-section-text-container">
+            <h2 id="carousel-section-text-title">
+                <span>Dining at Santafe:</span>
+                <span>A taste of Excellence</span>
+            </h2>
+            <p id="carousel-section-text-content">
+                Discover the Culinary Treasures of Yerevan 
+                at Our Restaurant - We Take Pride in Offering 
+                You a Taste of Chef's Culinary Artistry and 
+                Unmatched Flavors.
+            </p>
+        </div>
+        <div id="carousel-section-slider-container">
+            <div id="carousel-section-slider-left">
+                <i class="carousel-section-slider-button fa fa-solid fa-chevron-left"></i>
+            </div>
+            <div id="carousel-section-carousel">
+                <div>
+                    <img src="https://picsum.photos/300/300" alt="">
+                </div>
+                <div>
+                    <img src="https://picsum.photos/300/300" alt="">
+                </div>
+                <div>
+                    <img src="https://picsum.photos/300/300" alt="">
+                </div>
+            </div>
+            <div id="carousel-section-slider-right">
+                <i class="carousel-section-slider-button fa fa-solid fa-chevron-right"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Chef Section -->
 <section class="container" id="chef-section">
     <div id="chef-section-container">
         <div id="chef-section-image-container">
-            <img id="chef-section-image" src="{{ asset('images/chef-luca.png')}}" alt="">
+            <img id="chef-section-image" src="{{ asset('images/chef-luca.png') }}" alt="">
         </div>
         <div id="chef-section-text-container">
             <h2 id="chef-section-text-title">Luca Carleo</h2>

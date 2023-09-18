@@ -1,0 +1,112 @@
+#carousel-section {
+    background-color: $sf-light-green;
+
+    #carousel-section-container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+
+        #carousel-section-text-container {
+            width: 40%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            #carousel-section-text-title  {
+                color: $sf-dark-green;
+                font-size: 60px;
+                font-style: italic;
+                font-weight: 500;
+
+                span {
+                    color: $sf-dark-green;
+                    display: block;
+                }
+            }
+
+            #carousel-section-text-content {
+                color: #000;
+                font-size: 28px;
+                font-weight: 300;
+                margin-top: 20px;
+                text-align: justify;
+            }
+        }
+
+        #carousel-section-slider-container {
+            width: 60%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+
+            #carousel-section-slider-left {
+                width: 20%;
+                display: flex;
+                justify-content: center;
+            }
+
+            #carousel-section-carousel {
+                width: 60%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+
+                img {
+                    width: 300px;
+                    margin: 0px 50px;
+                }
+            }
+
+            #carousel-section-slider-right {
+                width: 20%;
+                display: flex;
+                justify-content: center;
+            }
+
+            .carousel-section-slider-button {
+                font-size: 50px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #carousel-section {
+        
+        #carousel-section-container {
+            flex-direction: column-reverse;
+
+            #carousel-section-text-container {
+                width: 100%;
+
+                #carousel-section-text-title  {
+                    font-size: 32px;
+                }
+
+                #carousel-section-text-content {
+                    font-size: 16px;
+                }
+            }
+
+            #carousel-section-slider-container {
+                width: 100%;
+
+                #carousel-section-carousel {
+                    width: 100%;
+
+                    img {
+                        width: 180px;
+                        margin: 0px 50px;
+                    }
+                }
+
+                .carousel-section-slider-button {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
