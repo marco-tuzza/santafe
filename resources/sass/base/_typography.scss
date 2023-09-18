@@ -1,6 +1,5 @@
 /**
-* WienPro font
-* Used for the english language 
+* WienPro font-face declarations
 */
 @font-face {
     font-family: 'WienPro';
@@ -31,32 +30,4 @@
     src: url('../fonts/Wien-Pro/WienPro-Oblique-Medium.otf') format('opentype');
     font-style: italic;
     font-weight: 500;
-}
-
-/**
-* Montserrat Armenian font
-* Used for the armenian language 
-*/
-@font-face {
-    font-family: 'Montserrat Armenian';
-    src: url('../fonts/Montserrat-Armenian/Montserratarm-Light.otf') format('truetype');
-    font-weight: 300;
-}
-
-@font-face {
-    font-family: 'Montserrat Armenian';
-    src: url('../fonts/Montserrat-Armenian/Montserratarm-Regular.otf') format('truetype');
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: 'Montserrat Armenian';
-    src: url('../fonts/Montserrat-Armenian/Montserratarm-Medium.otf') format('truetype');
-    font-weight: 500;
-}
-
-@font-face {
-    font-family: 'Montserrat Armenian';
-    src: url('../fonts/Montserrat-Armenian/Montserratarm-Bold.otf') format('truetype');
-    font-weight: bold;
 }
