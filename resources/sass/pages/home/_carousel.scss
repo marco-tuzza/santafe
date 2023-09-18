@@ -4,6 +4,7 @@
     #carousel-section-container {
         height: 100%;
         width: 100%;
+        display: flex;
 
         #carousel-section-text-container {
             width: 40%;
@@ -30,6 +31,45 @@
                 font-weight: 300;
                 margin-top: 20px;
                 text-align: justify;
+            }
+        }
+
+        #carousel-section-slider-container {
+            width: 60%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+
+            #carousel-section-slider-left {
+                width: 20%;
+                display: flex;
+                justify-content: center;
+            }
+
+            #carousel-section-carousel {
+                width: 60%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+
+                img {
+                    width: 300px;
+                    margin: 0px 50px;
+                }
+            }
+
+            #carousel-section-slider-right {
+                width: 20%;
+                display: flex;
+                justify-content: center;
+            }
+
+            .carousel-section-slider-button {
+                width: 38px;
+                height: 40px;
+                font-size: 50px;
             }
         }
     }
