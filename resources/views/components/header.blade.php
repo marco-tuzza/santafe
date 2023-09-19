@@ -21,8 +21,8 @@
                         <img src="{{ asset('images/santafe_logo.png') }}" alt="SantaFe Logo">
                     </div>
                 </li>
-                <li class="header-menu-item">
-                    <a href="/about" title="Learn about our restaurant">About Us</a>
+                <li class="header-menu-item {{ request()->is('about-us') ? 'active' : '' }}">
+                    <a href="{{ route('about-us') }}" title="Learn about our restaurant">About Us</a>
                 </li>
                 <li class="header-menu-item">
                     <a href="/contact" title="Contact us for reservations">Contact Us</a>
