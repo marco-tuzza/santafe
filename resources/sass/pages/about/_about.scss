@@ -1,0 +1,65 @@
+#about-us-title-container {
+    height: 400px;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        color: white;
+        font-size: 128px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 22px;
+    }
+}
+
+#about-us-content-container {
+    background-color: $sf-light-green;
+    padding-top: 22px;
+    padding-bottom: 22px;
+
+    div.about-us-content-text {
+        font-size: 32px;  
+        color: $sf-dark-green; 
+        text-align: justify;
+        padding: 22px 0px;
+
+        h2.about-us-content-text-title {
+            font-size: 36px;
+            text-decoration: underline;
+            margin-bottom: 16px;
+            text-align: left;
+        }
+
+        span.styled-capital-letter {
+            font-weight: bold;
+            font-size: 48px;
+        }
+
+        ul.about-us-content-text-list {
+            padding-left: 30px;
+
+            span.about-us-content-text-list-element-title {
+                font-weight: 500;
+            }
+        }
+    }
+
+    div.about-us-content-text-image-container {
+        display: flex;
+        justify-content: space-between;
+
+        div {
+            width: calc(calc(50% - 60px));
+        }
+        
+        div.about-us-content-image {
+            padding: 22px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: grey;
+        }
+    }
+}
