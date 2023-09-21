@@ -32,7 +32,7 @@
             </p>
         </div>
         <div class="about-us-content-image">
-
+            <img src="images/about-us-pic-1.png" alt="">
         </div>
     </div>
 
@@ -51,7 +51,7 @@
 
     <div class="about-us-content-text-image-container">
         <div class="about-us-content-image">
-
+            <img src="images/about-us-pic-2.png" alt="">
         </div>
         <div class="about-us-content-text">
             <h2 class=about-us-content-text-title>
