@@ -13,7 +13,7 @@
                 <li class="header-menu-item {{ request()->is('/') ? 'active' : '' }}">
                     <a href="/" title="Visit SantaFe Restaurant homepage">Home</a>
                 </li>
-                <li class="header-menu-item">
+                <li class="header-menu-item ">
                     <a href="/menu" title="View our menu">Menu</a>
                 </li>
                 <li>
@@ -24,8 +24,8 @@
                 <li class="header-menu-item {{ request()->is('about-us') ? 'active' : '' }}">
                     <a href="{{ route('about-us') }}" title="Learn about our restaurant">About Us</a>
                 </li>
-                <li class="header-menu-item">
-                    <a href="/contact" title="Contact us for reservations">Contact Us</a>
+                <li class="header-menu-item {{ request()->is('contact-us') ? 'active' : '' }}">
+                    <a href="{{ route('contact-us') }}" title="Contact us for reservations">Contact Us</a>
                 </li>
             </ul>
         </div>
@@ -44,11 +44,11 @@
             <li class="menu-mobile-body-element">
                 <a href="/menu" title="View our menu">Menu</a>
             </li>
-            <li class="menu-mobile-body-element">
-                <a href="/about" title="Learn about our restaurant">About Us</a>
+            <li class="menu-mobile-body-element {{ request()->is('about-us') ? 'active' : '' }}">
+                <a href="{{ route('about-us') }}" title="Learn about our restaurant">About Us</a>
             </li>
-            <li class="menu-mobile-body-element">
-                <a href="/contact" title="Contact us for reservations">Contact Us</a>
+            <li class="menu-mobile-body-element {{ request()->is('contact-us') ? 'active' : '' }}">
+                <a href="{{ route('contact-us') }}" title="Contact us for reservations">Contact Us</a>
             </li>
         </ul>
     </div>
