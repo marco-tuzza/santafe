@@ -43,7 +43,7 @@
                     }
 
                     .footer-menu-nav-list-separator {
-                        padding: 0 8px;
+                        padding: 0px 8px;
                         color: $sf-green;
                         font-size: 24px;
                         font-weight: 300;
@@ -73,10 +73,8 @@
             
             a {
                 color: $sf-green;
-                text-decoration: none;
                 font-size: 18px;
                 font-weight: 300;
-                border-bottom: 2px solid $sf-green;
             }
         }
 
@@ -139,17 +137,18 @@
                     #footer-menu-nav-list {
                         .footer-menu-nav-list-element {
                             a {
-                                font-size: 18px;
+                                font-size: 14px;
                             }
                         }
 
                         .footer-menu-nav-list-separator {
-                            font-size: 18px;
+                            font-size: 14px;
+                            padding: 0px 4px;
                         }
                     }
 
                     #footer-menu-nav-underline {
-                        width: 320px;
+                        width: 80%;
                     }
                 }
             }
