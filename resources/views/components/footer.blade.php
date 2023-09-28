@@ -15,11 +15,11 @@
                     </li>
                     <span class="footer-menu-nav-list-separator">|</span>
                     <li class="footer-menu-nav-list-element">
-                        <a href="/about" title="Learn about our restaurant">About Us</a>
+                        <a href="{{ route('about-us') }}" title="Learn about our restaurant">About Us</a>
                     </li>
                     <span class="footer-menu-nav-list-separator">|</span>
                     <li class="footer-menu-nav-list-element">
-                        <a href="/contact" title="Contact us for reservations">Contact Us</a>
+                        <a href="{{ route('contact-us') }}" title="Contact us for reservations">Contact Us</a>
                     </li>
                 </ul>
                 <div id="footer-menu-nav-underline"></div>
