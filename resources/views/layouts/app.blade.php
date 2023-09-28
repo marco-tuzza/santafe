@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>SantaFe</title>
+        <link rel="icon" href="{{ asset('images/favicon.png') }}" type="image/x-icon"/>
         <!-- Styles -->
         @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     </head>
