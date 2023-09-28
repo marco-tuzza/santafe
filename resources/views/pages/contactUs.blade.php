@@ -20,15 +20,79 @@
     <div id="contact-us-body-content">
         <div id="contact-us-body-content-form">
             <form id="contact-us-form" action="POST">
-                <input type="text" name="name">
-                <input type="email" name="email">
-                <input type="text" name="phone">
-                <textarea name="message"></textarea>
-                <input type="submit" value="Send" class="btn btn-primary btn-block">
+                <label for="name">
+                    Name <span class="contact-us-form-required-text">- Required</span>
+                </label>
+                <input class="contact-us-form-input" type="text" name="name">
+                <label for="email">
+                    Email <span class="contact-us-form-required-text">- Required</span>
+                </label>
+                <input class="contact-us-form-input" type="email" name="email">
+                <label for="phone">
+                    Phone Number
+                </label>
+                <input class="contact-us-form-input" type="text" name="phone">
+                <label for="message">
+                    Message <span class="contact-us-form-required-text">- Required</span>
+                </label>
+                <textarea class="contact-us-form-textarea"  name="message"></textarea>
+                <input class="contact-us-form-submit"  type="submit" value="Submit" class="sf-primary-button">
             </form>
         </div>
         <div id="contact-us-body-content-contacts">
-            contacts
+            <div id="contact-us-body-content-contacts-address">
+                <span>
+                    <i class="fa-solid fa-map-marker"></i>
+                    <a href="https://www.tripadvisor.com/Restaurant_Review-g293932-d14958752-Reviews-SANTAFE-Yerevan.html#MAPVIEW" 
+                    title="Santa Fe Restaurant TripAdvisor page">
+                        Mokovyan St., 29/4 France Square, Yerevan 0010 Armenia
+                    </a>
+                </span>
+            </div>
+            <div id="contact-us-body-content-contacts-hours">
+                <div id="contact-us-body-content-contacts-hours-text">
+                    <span>Hours</span>
+                </div>
+                <div id="contact-us-body-content-contacts-hours-days">
+                    <span>Monday</span>
+                    <span>Tuesday</span>
+                    <span>Wednesday</span>
+                    <span>Thursday</span>
+                    <span>Friday</span>
+                    <span>Saturday</span>
+                    <span>Sunday</span>
+                </div>
+                <div id="contact-us-body-content-contacts-hours-times">
+                    <span>10AM - 2AM</span>
+                    <span>10AM - 2AM</span>
+                    <span>10AM - 2AM</span>
+                    <span>10AM - 2AM</span>
+                    <span>10AM - 2AM</span>
+                    <span>10AM - 2AM</span>
+                    <span>10AM - 2AM</span>
+                </div>
+            </div>
+            <div id="contact-us-body-content-contacts-phone">
+                <div id="contact-us-body-content-contacts-phone-text">
+                    <span>Phone</span>
+                </div>
+                <div id="contact-us-body-content-contacts-phone-number">
+                    <span>044 999929</span>
+                </div>
+            </div>
+            <div id="contact-us-body-content-contacts-socials">
+                <div id="contact-us-body-content-contacts-socials-text">
+                    <span>Socials</span>
+                </div>
+                <div id="contact-us-body-content-contacts-socials-icons">
+                    <a href="">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </div>
