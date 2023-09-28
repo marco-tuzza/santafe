@@ -5,7 +5,7 @@
     <iframe src="https://my.atlist.com/map/018f48e8-0c86-4941-9604-09382c609c99?share=true" 
     allow="geolocation 'self' https://my.atlist.com" 
     width="100%" 
-    height="500px" 
+    height="100%" 
     frameborder="0" 
     scrolling="no" 
     allowfullscreen></iframe>
@@ -77,7 +77,7 @@
                     <span>Phone</span>
                 </div>
                 <div id="contact-us-body-content-contacts-phone-number">
-                    <span>044 999929</span>
+                    <span><a href="tel:044999929">044 999929</a></span>
                 </div>
             </div>
             <div id="contact-us-body-content-contacts-socials">

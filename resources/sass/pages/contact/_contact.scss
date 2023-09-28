@@ -120,6 +120,10 @@
 
 #contact-us-body-content-contacts-phone-number {
     margin-left: 16px;
+    
+    a {
+        color: #fff;
+    }
 }
 
 #contact-us-body-content-contacts-socials {
@@ -150,5 +154,53 @@
             justify-content: center;
             align-items: center;
         }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    #contact-us-map-container {
+        height: 220px;
+    }
+
+    #contact-us-body-title {
+        font-size: 28px;
+    
+        span {
+            font-size: 20px;
+        }
+    }
+
+    #contact-us-body-container {
+        padding: 24px 20px;
+    }
+
+    #contact-us-body-content {
+        flex-direction: column;
+        margin-top: 24px;
+    }
+
+    #contact-us-body-content-form {
+        width: 100%;
+        padding-right: 0px;
+        margin-bottom: 24px;
+    }
+
+    #contact-us-form {
+
+        input.contact-us-form-input,
+        textarea.contact-us-form-textarea {
+            max-width: 100%;
+        }
+
+        input.contact-us-form-submit {
+            width: 100%;
+            height: 50px;
+        }
+    }
+
+    #contact-us-body-content-contacts {
+        padding-left: 0px;
+        font-size: 16px;
     }
 }
