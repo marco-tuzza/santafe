@@ -23,20 +23,24 @@
                 <label for="name">
                     Name <span class="contact-us-form-required-text">- Required</span>
                 </label>
-                <input class="contact-us-form-input" type="text" name="name">
+                <input class="contact-us-form-input" type="text" name="name" id="name" required>
+                
                 <label for="email">
                     Email <span class="contact-us-form-required-text">- Required</span>
                 </label>
-                <input class="contact-us-form-input" type="email" name="email">
+                <input class="contact-us-form-input" type="email" name="email" id="email" required>
+                
                 <label for="phone">
                     Phone Number
                 </label>
-                <input class="contact-us-form-input" type="text" name="phone">
+                <input class="contact-us-form-input" type="tel" name="phone" id="phone">
+                
                 <label for="message">
                     Message <span class="contact-us-form-required-text">- Required</span>
                 </label>
-                <textarea class="contact-us-form-textarea"  name="message"></textarea>
-                <input class="contact-us-form-submit"  type="submit" value="Submit" class="sf-primary-button">
+                <textarea class="contact-us-form-textarea" name="message" id="message" minlength="10" required></textarea>
+                
+                <input class="contact-us-form-submit" type="submit" value="Submit" class="sf-primary-button">
             </form>
         </div>
         <div id="contact-us-body-content-contacts">
