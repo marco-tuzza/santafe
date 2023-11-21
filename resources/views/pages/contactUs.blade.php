@@ -19,16 +19,18 @@
     </div>
     <div id="contact-us-body-content">
         <div id="contact-us-body-content-form">
-            <form id="contact-us-form" action="POST">
+            <form id="contact-us-form" action="/">
+                @method('POST')
+                @csrf
                 <label for="name">
                     Name <span class="contact-us-form-required-text">- Required</span>
                 </label>
-                <input class="contact-us-form-input" type="text" name="name" id="name" required>
+                <input class="contact-us-form-input" type="text" name="name" id="name">
                 
                 <label for="email">
                     Email <span class="contact-us-form-required-text">- Required</span>
                 </label>
-                <input class="contact-us-form-input" type="email" name="email" id="email" required>
+                <input class="contact-us-form-input" type="email" name="email" id="email">
                 
                 <label for="phone">
                     Phone Number
@@ -38,9 +40,10 @@
                 <label for="message">
                     Message <span class="contact-us-form-required-text">- Required</span>
                 </label>
-                <textarea class="contact-us-form-textarea" name="message" id="message" minlength="10" required></textarea>
+                <textarea class="contact-us-form-textarea" name="message" id="message" minlength="10"></textarea>
                 
-                <input class="contact-us-form-submit" type="submit" value="Submit" class="sf-primary-button">
+                <input id="submit" type="submit" value="Submit" class="sf-primary-button">
+                <span id="error"></span>
             </form>
         </div>
         <div id="contact-us-body-content-contacts">
