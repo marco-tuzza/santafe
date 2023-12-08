@@ -11,10 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('submenus', function (Blueprint $table) {
+        Schema::create('categories', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->unsignedBigInteger('submenu_id');
             $table->unsignedInteger('order')->default(0)->nullable();
+            $table->foreign('submenu_id')->references('id')->on('submenus')->onDelete('cascade');
             $table->timestamps();
         });
     }
@@ -24,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('submenus');
+        Schema::dropIfExists('categories');
     }
 };

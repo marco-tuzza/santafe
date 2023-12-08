@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MenuController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,3 +25,5 @@ Route::get('/about-us', function () {
 Route::get('/contact-us', function () {
     return view('pages/contactUs');
 })->name('contact-us');
+
+Route::get('/menu', [MenuController::class, 'index'])->name('menu');

@@ -5,12 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Submenu extends Model
+class Category extends Model
 {
     use HasFactory;
 
-    public function categories()
+    public function submenu()
     {
-        return $this->hasMany(Category::class);
+        return $this->belongsTo(Submenu::class);
     }
 }
+
